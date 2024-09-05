@@ -113,9 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let selectedGame = null;
 
-    sourceCode.addEventListener('click', () => {
-        window.open('https://github.com/mabounkoungou/hamkeygen.git', '_blank');
-    });
+  
     
 gameOptions.forEach(option => {
     option.addEventListener('click', () => {
