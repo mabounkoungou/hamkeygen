@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f5f7fa;
-    color: #333;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +18,13 @@ body {
     max-height: 300px; /* Adjust this height based on your layout needs */
     overflow-y: auto;
     padding-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(3, 233, 233, 0.664);
+
 }
 
 .game-option {
-    border: 1px solid #ddd;
+    border: 1px solid #05b4b4;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
@@ -32,14 +35,14 @@ body {
 /* Ensure the selected game stands out */
 .game-option.selected {
     transform: scale(1.05);
-    border-color: #007bff;
+    border-color: #05b4b4;
     background-color: #f0f8ff; /* Optional: Slight background color change */
 }
 
 .container {
-    background: #ffffff;
+    background: #201b1b;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(3, 233, 233, 0.664);
     padding: 30px;
     max-width: 400px;
     width: 100%;
@@ -49,7 +52,7 @@ body {
 h1 {
     margin-bottom: 25px;
     font-size: 24px;
-    color: #007bff;
+    color: #05b4b4;
 }
 
 
@@ -61,12 +64,12 @@ h1 {
 
 .game-option p {
     font-weight: 500;
-    color: #555;
+    color: #05b4b4;
 }
 
 .game-option:hover, .game-option.selected {
     transform: scale(1.05);
-    border-color: #007bff;
+    border-color: #05b4b4;
 }
 
 .form-group {
@@ -78,7 +81,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: #555;
+    color: #fff;
 }
 
 .key-slider {
@@ -103,23 +106,23 @@ label {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #007bff;
+    background: #05b4b4;
     cursor: pointer;
     transition: background 0.3s;
 }
 
 .key-slider input[type="range"]:hover::-webkit-slider-thumb {
-    background: #0056b3;
+    background: #05b4b4;
 }
 
 #keyValue {
     font-size: 18px;
     font-weight: bold;
-    color: #007bff;
+    color: #05b4b4;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #05b4b4;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -131,7 +134,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #05b4b4;
 }
 
 .hidden {
@@ -149,7 +152,7 @@ button:hover {
 
 .progress-bar div {
     height: 100%;
-    background-color: #007bff;
+    background-color: #05b4b4;
     width: 0;
     transition: width 0.5s;
 }
@@ -169,13 +172,13 @@ button:hover {
     flex: 1;
     padding: 12px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
     border-radius: 8px;
     margin-right: 12px;
 }
 
 .copyKeyBtn {
-    background-color: #28a745;
+    background-color: #05b4b4;
     border: none;
     padding: 12px 20px;
     color: white;
@@ -186,16 +189,16 @@ button:hover {
 }
 
 .copyKeyBtn:hover {
-    background-color: #218838;
+    background-color: hsl(180, 85%, 64%);
 }
 
 .footer {
     margin-top: 25px;
     font-size: 14px;
-    color: #777;
+    color: #fff;
 }
 
 #copyStatus {
     margin-top: 15px;
-    color: green;
+    color: #05b4b4;
 }

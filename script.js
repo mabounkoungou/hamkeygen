@@ -163,10 +163,12 @@ gameOptions.forEach(option => {
         let progress = 0;
         const updateProgress = (increment, message) => {
             progress += increment;
-            progressBar.style.width = `${progress}%`;
-            progressText.innerText = `${progress}%`;
+            const roundedProgress = Math.round(progress); // Round to nearest integer
+            progressBar.style.width = `${roundedProgress}%`;
+            progressText.innerText = `${roundedProgress}%`;
             progressLog.innerText = message;
         };
+        
 
         const generateKeyProcess = async () => {
             const clientId = generateClientId();
